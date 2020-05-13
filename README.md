@@ -11,7 +11,7 @@ The game has three types of characters: one Hunter, one Quarry, and several Guar
 
 This project uses Unity 2018.4.22f1.  
 
-When you run the SampleScene, you will see three sprites: The blue Hunter, the orange Guard and the Quarry, which looks like a bullseye.  
+When you run the `SampleScene`, you will see three sprites: The blue Hunter, the orange Guard and the Quarry, which looks like a bullseye.  
 
 ![Three Sprites](images/threesprites.JPG)
 
@@ -27,7 +27,7 @@ You can restart the scenario with any number of guards.
 
 ![Restart GUI](images/restart.JPG)
 
-Try the different strategies with different number of guards.  
+Try the different strategies with different numbers of guards.  
 
 ### Keyboard and Mouse Controls 
 
