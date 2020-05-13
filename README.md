@@ -51,6 +51,7 @@ public class MyVeryOwnSeekingStrategy: SeekingStrategy
         Vector2 result; 
 
         // Write your own code here to calculate a position for the seeker to run towards. 
+        // This function will get called every frame.  
 
         return result; 
     }
