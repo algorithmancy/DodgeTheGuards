@@ -3,7 +3,7 @@ A case study for the Gameheads programming class.
 
 ## Introduction
 
-This is a programming exercise where you will create a simple movement behavior for a non-player-character in a very simple video game. 
+This is a programming exercise where you will create a simple movement behavior for a non-player-character in a tiny sample game. 
 
 The game has three types of characters: one Hunter, one Quarry, and several Guards. You will be creating the AI logic for the Hunter.  The Hunter's job is simple: reach the Quarry without being intercepted by the guards.  Note that the Hunter is faster than the Guards, but the Guards might be numerous, and advantageously positioned.  
 
@@ -56,6 +56,8 @@ public class MyVeryOwnSeekingStrategy: SeekingStrategy
     }
 }
 ``` 
+
+Look at `SeekingStrategies.cs` for ideas about what to do.  
 
 Your strategy will automatically appear on the selection GUI: 
 ![Updated Strategy GUI](images/myveryown.JPG)
