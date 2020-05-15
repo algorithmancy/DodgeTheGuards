@@ -3,7 +3,7 @@ A case study for the Gameheads programming class.
 
 ## Introduction
 
-This is a programming exercise where you will create a simple movement behavior for a non-player-character in a very simple video game. 
+This is a programming exercise where you will create a simple movement behavior for a non-player-character in a tiny sample game. 
 
 The game has three types of characters: one Hunter, one Quarry, and several Guards. You will be creating the AI logic for the Hunter.  The Hunter's job is simple: reach the Quarry without being intercepted by the guards.  Note that the Hunter is faster than the Guards, but the Guards might be numerous, and advantageously positioned.  
 
@@ -11,7 +11,7 @@ The game has three types of characters: one Hunter, one Quarry, and several Guar
 
 This project uses Unity 2018.4.22f1.  
 
-When you run the SampleScene, you will see three sprites: The blue Hunter, the orange Guard and the Quarry, which looks like a bullseye.  
+When you run the `SampleScene`, you will see three sprites: The blue Hunter, the orange Guard and the Quarry, which looks like a bullseye.  
 
 ![Three Sprites](images/threesprites.JPG)
 
@@ -27,7 +27,7 @@ You can restart the scenario with any number of guards.
 
 ![Restart GUI](images/restart.JPG)
 
-Try the different strategies with different number of guards.  
+Try the different strategies with different numbers of guards.  
 
 ### Keyboard and Mouse Controls 
 
@@ -51,11 +51,14 @@ public class MyVeryOwnSeekingStrategy: SeekingStrategy
         Vector2 result; 
 
         // Write your own code here to calculate a position for the seeker to run towards. 
+        // This function will get called every frame.  
 
         return result; 
     }
 }
 ``` 
+
+Look at `SeekingStrategies.cs` for ideas about what to do.  
 
 Your strategy will automatically appear on the selection GUI: 
 ![Updated Strategy GUI](images/myveryown.JPG)
