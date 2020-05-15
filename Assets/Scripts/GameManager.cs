@@ -173,6 +173,8 @@ public class GameManager : MonoBehaviour
     public Quarry quarryPrefab;
     public Guard guardPrefab;
 
+    public LineRenderer debugLinePrefab; 
+
     public Vector2 hunterStart = new Vector2(0, 3);
     public Vector2 quarryStart = new Vector2(0, -3);
 

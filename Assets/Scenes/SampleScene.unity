@@ -242,6 +242,8 @@ MonoBehaviour:
     type: 3}
   guardPrefab: {fileID: 36464782730811582, guid: 60ab5cf9149aced4dbdf5f36501e97f6,
     type: 3}
+  debugLinePrefab: {fileID: 1071233023307043756, guid: 85e920bc338ae094791db26eb73e07d5,
+    type: 3}
   hunterStart: {x: 0, y: 3}
   quarryStart: {x: 0, y: -3}
   guardStartZone:
