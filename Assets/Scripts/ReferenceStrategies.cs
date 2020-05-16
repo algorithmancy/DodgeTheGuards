@@ -244,6 +244,9 @@ class BlobManager
         mBlobMap.Clear(); 
     }
 
+    // The next two functions implement Disjoint Set Forest 
+    // See https://en.wikipedia.org/wiki/Disjoint-set_data_structure
+
     public ICharacter GetBlobLeader(ICharacter guard)
     {
         if (mGuardForest.TryGetValue(guard, out ICharacter commander))
