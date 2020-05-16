@@ -6,7 +6,7 @@ public class DirectSeekingStrategy: SeekingStrategy
 {
     public override Vector2 ChooseWaypoint(ICharacter seeker, ICharacter target, IEnumerable<ICharacter> obstacles)
     {
-        return target.position; 
+       return target.position; 
     }
 }
 
@@ -42,7 +42,7 @@ public class FleeClosestSeekingStrategy : SeekingStrategy
 
         float maxDistance = (threat.radius + seeker.radius) * kDangerZone;
 
-        if (toThreat.sqrMagnitude > maxDistance)
+        if (toThreat.sqrMagnitude > maxDistance * maxDistance)
             return target.position;
 
         // Run away from the threat, but at an angle 

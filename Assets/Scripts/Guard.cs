@@ -27,7 +27,7 @@ public class Guard: Character
         if (hunter == null)
             hunter = transform.parent.GetComponentInChildren<Hunter>();
 
-        return (ICharacter)hunter ?? this; 
+        return (hunter != null) ? (ICharacter)hunter : this;
     }
 
 
