@@ -55,7 +55,7 @@ public static partial class Utils
 
     public static bool IsBehindSeeker(this ICharacter guard, ICharacter seeker, ICharacter target)
     {
-        var toTarget = target.position - seeker.position.normalized;
+        var toTarget = (target.position - seeker.position).normalized;
 
         var toGuard = guard.position - seeker.position;
 
